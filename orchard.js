@@ -143,6 +143,7 @@ while (acresLeft > 0) {
     days += 1; acresLeft -= 9
 }
 console.log(days)
+//simply followed the steps above. Either I'm getting better at translating human instructions into code or they are just written very clearly... if I did it correctly that is!
 
 // PROBLEM 4
 
