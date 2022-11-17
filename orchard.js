@@ -106,8 +106,6 @@ let averageDailyAcres = (totalAcres / 7);{
 }
 
 
-
-
 // PROBLEM 3
 
 /*
@@ -141,8 +139,10 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
-
-
+while (acresLeft > 0) {
+    days += 1; acresLeft -= 9
+}
+console.log(days)
 
 // PROBLEM 4
 
