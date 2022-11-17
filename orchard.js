@@ -50,11 +50,43 @@ const pinkPrice = .55
 */
 
 // CODE HERE
+// function to return sum of elements in array 
+function sum(fujiAcres) { 
+    let sum = 0;
+// Initialize sum 
+   
+// Iterate through all elements 
+// and add them to sum 
+for (let i = 0; i < fujiAcres.length; i++) 
+            sum += fujiAcres[i]; 
+        return sum; 
+    } 
+//console log the sum total of array
+    console.log("Fuji Apples picked per week:" + sum(fujiAcres));
 
+//code repeated for final two arrays
+function sum(galaAcres) { 
+    let sum = 0;
+    
+for (let i = 0; i < galaAcres.length; i++) 
+            sum += galaAcres[i]; 
+        return sum; 
+        } 
+    console.log("Gala apples picked per week:" + sum(galaAcres));
 
+function sum(pinkAcres) { 
+    let sum = 0;
+        
+for (let i = 0; i < pinkAcres.length; i++) 
+            sum += pinkAcres[i]; 
+        return sum; 
+            }  
+    console.log("Pink apples picked per week:" + sum(pinkAcres));
 
-
-
+//This took a little thinking... created the totalAcres variable combining the three sum functions declared.
+let totalAcres = sum(fujiAcres) + sum(galaAcres) + sum(pinkAcres);{
+    console.log(totalAcres)
+}
 // PROBLEM 2
 
 /*
@@ -68,7 +100,10 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-
+//totalAcres = total sum acres picked over seven days. Daily Average = totalAcres/7
+let averageDailyAcres = (totalAcres / 7);{
+    console.log(averageDailyAcres)
+}
 
 
 
