@@ -262,7 +262,6 @@ for(let i = 0; i < fujiPounds.length; i++)
 {
 
 //pounds * price/pound calculates profit/day
-//used += operator to add the daily profit to total profit.
     fujiProfit += (fujiPounds[i] * fujiPrice);
     galaProfit += (galaPounds[i] * galaPrice);
     pinkProfit += (pinkPounds[i] * pinkPrice);
