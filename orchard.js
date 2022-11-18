@@ -254,14 +254,24 @@ console.log(pinkPounds);
 */
 
 // CODE HERE
+let fujiProfit = 0;
+let galaProfit = 0;
+let pinkProfit = 0;
+//looped through all arrays again assuming identical length.
+for(let i = 0; i < fujiPounds.length; i++)
+{
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+//pounds * price/pound calculates profit/day
+//used += operator to add the daily profit to total profit.
+    fujiProfit += (fujiPounds[i] * fujiPrice);
+    galaProfit += (galaPounds[i] * galaPrice);
+    pinkProfit += (pinkPounds[i] * pinkPrice);
+}
 
-
-
-
+//console logged results / 100 to show dollar amounts instead of cents
+console.log(fujiProfit / 100);
+console.log(galaProfit / 100);
+console.log(pinkProfit / 100);
 
 
 // PROBLEM 7
@@ -275,3 +285,6 @@ console.log(pinkPounds);
 */
 
 // CODE HERE
+//added total profits together and console logged result / 100 to show dollar amounts.
+let totalProfit = (fujiProfit + galaProfit + pinkProfit);
+console.log("total profit =", totalProfit / 100);
