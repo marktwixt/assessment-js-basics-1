@@ -84,6 +84,7 @@ for (let i = 0; i < pinkAcres.length; i++)
     console.log("Pink apples picked per week:" + sum(pinkAcres));
 
 //This took a little thinking... created the totalAcres variable combining the three sum functions declared.
+//This code is definitely longer/messier than it needs to be, but will support any changes in indexes to any of the arrays.
 let totalAcres = sum(fujiAcres) + sum(galaAcres) + sum(pinkAcres);{
     console.log(totalAcres)
 }
@@ -140,9 +141,10 @@ let days = 0
 
 // CODE HERE
 while (acresLeft > 0) {
-    days += 1; acresLeft -= 9
+    acresLeft -= averageDailyAcres;
+    days ++
 }
-console.log(days)
+console.log(days);
 //simply followed the steps above. Either I'm getting better at translating human instructions into code or they are just written very clearly... if I did it correctly that is!
 
 // PROBLEM 4
@@ -170,10 +172,23 @@ console.log(days)
 */
 
 // CODE HERE
-
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+const tonsPerAcre = 6.5;
+//created empty arrays
+let fujiTons = [];
+let galaTons = [];
+let pinkTons = [];
+//looped through all arrays... unlike problem 1, this method requires the assumption that all arrays are the same length (7 days in a week).
+for(let i = 0; i < fujiAcres.length; i++)
+{
+//acres picked of each type * 6.5 (tonsPerAcre) = total tons picked by apple type
+    fujiTons.push(fujiAcres[i] * tonsPerAcre);
+    galaTons.push(galaAcres[i] * tonsPerAcre);
+    pinkTons.push(pinkAcres[i] * tonsPerAcre);
+}
+//console logged results
+console.log(fujiTons);
+console.log(galaTons);
+console.log(pinkTons);
 
 
 
@@ -197,10 +212,25 @@ console.log(days)
 */
 
 // CODE HERE 
+//set pounds
+const tonPounds = 2000;
+//defined empty arrays
+let fujiPounds = [];
+let galaPounds = [];
+let pinkPounds = [];
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+//looped through arrays, again assuming identical length (7 days per week).
+for(let i = 0; i < fujiTons.length; i++)
+{
+//multiplied tons per day by tonPounds value (2000) to convert to pounds. 
+//Used the push method to add new values to the new arrays as in previous problem.
+    fujiPounds.push(fujiTons[i] * tonPounds);
+    galaPounds.push(galaTons[i] * tonPounds);
+    pinkPounds.push(pinkTons[i] * tonPounds);
+}
+console.log(fujiPounds);
+console.log(galaPounds);
+console.log(pinkPounds);
 
 
 
