@@ -86,8 +86,8 @@ for (let i = 0; i < pinkAcres.length; i++)
 //This took a little thinking... created the totalAcres variable combining the three sum functions declared.
 //This code is definitely longer/messier than it needs to be, but will support any changes in indexes to any of the arrays.
 let totalAcres = sum(fujiAcres) + sum(galaAcres) + sum(pinkAcres);{
-    console.log(totalAcres)
 }
+console.log(totalAcres);
 // PROBLEM 2
 
 /*
@@ -103,9 +103,8 @@ let totalAcres = sum(fujiAcres) + sum(galaAcres) + sum(pinkAcres);{
 // CODE HERE
 //totalAcres = total sum acres picked over seven days. Daily Average = totalAcres/7
 let averageDailyAcres = (totalAcres / 7);{
-    console.log(averageDailyAcres)
 }
-
+console.log(averageDailyAcres);
 
 // PROBLEM 3
 
