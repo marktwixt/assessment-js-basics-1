@@ -139,12 +139,15 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
+//created while loop that runs while 'acresLeft' is above 0
 while (acresLeft > 0) {
+//subtracts daily average from number of acres left
     acresLeft -= averageDailyAcres;
+//adds 1 to the 'days' variable
     days ++
 }
+//console logged 'days' variable
 console.log(days);
-//simply followed the steps above. Either I'm getting better at translating human instructions into code or they are just written very clearly... if I did it correctly that is!
 
 // PROBLEM 4
 
